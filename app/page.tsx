@@ -1,12 +1,20 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="p-8">
-      <h1 className="text-2xl font-bold">
-        USAC AAC Website
-      </h1>
+    <section>
+      <h1 className="text-2xl font-bold">Welcome to USAC AAC</h1>
       <p className="mt-4 text-gray-600">
-        Site under construction.
+        Placeholder page for leadership content.
       </p>
-    </main>
+
+      {/* Simple link to Leadership page */}
+      <Link
+        href="/leadership"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Leadership Page →
+      </Link>
+    </section>
   );
 }
