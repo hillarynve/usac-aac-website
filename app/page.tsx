@@ -15,6 +15,14 @@ export default function Home() {
       >
         Go to Leadership Page →
       </Link>
+      <br></br>
+      {/* Simple link to Research page */}
+      <Link
+        href="/research"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Research Page →
+      </Link>
     </section>
   );
 }
