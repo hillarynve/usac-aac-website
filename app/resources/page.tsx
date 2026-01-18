@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Resources() {
   return (
     <section>
-      <h1 className="text-2xl font-bold">Commission Resources</h1>
+      <h1 className="text-2xl font-bold">AAC Resources</h1>
       <p className="mt-4 text-gray-600">
         Placeholder page for resources content.
       </p>
