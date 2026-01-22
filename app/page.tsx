@@ -35,6 +35,7 @@ export default function Home() {
       <br></br>
       
       {/* Simple link to Newsletter page */}
+      
       <Link 
         href="/newsletter"
         className="mt-4 inline-block text-blue-600 hover:underline"
