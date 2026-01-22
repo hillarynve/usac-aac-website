@@ -23,15 +23,15 @@ export default function Home() {
       >
         Go to Research Page →
       </Link>
+      <br></br>
 
-      <div>
-        <Link
-          href="/internship"
-          className="mt-4 inline-block text-blue-600 hover:underline"
-        >
-          Go to Internship Page →
-        </Link>
-      </div>
+      {/* Simple link to internships page */}
+      <Link
+        href="/internship"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Internship Page →
+      </Link>
       <br></br>
       
       {/* Simple link to Newsletter page */}
