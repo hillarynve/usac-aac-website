@@ -8,8 +8,24 @@ export default function Leadership() {
         Placeholder page for leadership content.
       </p>
 
+
+      <Link
+        href="/leadership/previous"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Previous Leadership Page →
+      </Link>
+
+      <br></br>
+
       <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
         Back to Home </Link>
+
+      
+
     </section>
+    
+
+
   );
 }
