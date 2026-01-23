@@ -15,9 +15,35 @@ export default function Home() {
       >
         Go to Leadership Page →
       </Link>
+      <br></br>
+      {/* Simple link to Research page */}
+      <Link
+        href="/research"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Research Page →
+      </Link>
+      <br></br>
 
+      {/* Simple link to internships page */}
+      <Link
+        href="/internship"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Internship Page →
+      </Link>
       <br></br>
       
+      {/* Simple link to Newsletter page */}
+      
+      <Link 
+        href="/newsletter"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Newsletter Page →
+      </Link>
+      <br></br>
+
       {/* Link to the Resources page */}
       <Link
         href="/resources"
@@ -25,6 +51,8 @@ export default function Home() {
       >
         Go to Resources page →
       </Link>
+      <br></br>
+
 
     </section>
   );
