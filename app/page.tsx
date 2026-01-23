@@ -42,6 +42,17 @@ export default function Home() {
       >
         Go to Newsletter Page →
       </Link>
+      <br></br>
+
+      {/* Link to the Resources page */}
+      <Link
+        href="/resources"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Resources page →
+      </Link>
+      <br></br>
+
 
     </section>
   );
