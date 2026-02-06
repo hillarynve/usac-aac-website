@@ -1,4 +1,6 @@
 import Link from "next/link";
+import LeadershipCard from "./leadership-card";
+import "./styles.css";
 
 export default function Leadership() {
   return (
@@ -9,7 +11,14 @@ export default function Leadership() {
       </p>
 
       <Link href="/leadership" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Common Leadership </Link>
+        Back to Common Leadership
+      </Link>
+
+      <LeadershipCard
+        img="blank"
+        name="Timmy"
+        title="President"
+      />
     </section>
   );
 }
