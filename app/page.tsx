@@ -53,15 +53,6 @@ export default function Home() {
       </Link>
       <br></br>
 
-      {/* Link to the SARP page */}
-      <Link
-        href="/sarp"
-        className="mt-4 inline-block text-blue-600 hover:underline"
-      >
-        Go to SARP page →
-      </Link>
-      <br></br>
-
 
     </section>
   );
