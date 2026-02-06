@@ -8,12 +8,12 @@ export default function Home() {
         Placeholder page for leadership content.
       </p>
 
-      {/* Simple link to Leadership page */}
+      {/* Simple link to Common Leadership page */}
       <Link
         href="/leadership"
         className="mt-4 inline-block text-blue-600 hover:underline"
       >
-        Go to Leadership Page →
+        Go to Common Leadership Page →
       </Link>
       <br></br>
       {/* Simple link to Research page */}
