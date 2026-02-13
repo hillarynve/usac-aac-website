@@ -8,6 +8,7 @@ export default function Nav() {
           <NavButton label="Commission Leadership" href="/leadership" dropdownItems={[
             {label: '25-26 Leadership', href: '/leadership/25-26-leadership'},
             {label: '25-26 Senator Guide', href: '/leadership/25-26-senator-guide'},
+            {label: 'Previous', href: '/leadership/previous'},
           ]}/>
           <NavButton label="Newsletter" href="/newsletter"/>
           <NavButton label="AAC Internship" href="/internship"/>
