@@ -8,12 +8,12 @@ export default function Home() {
         Placeholder page for leadership content.
       </p>
 
-      {/* Simple link to Leadership page */}
+      {/* Simple link to Common Leadership page */}
       <Link
         href="/leadership"
         className="mt-4 inline-block text-blue-600 hover:underline"
       >
-        Go to Leadership Page →
+        Go to Common Leadership Page →
       </Link>
       <br></br>
       {/* Simple link to Research page */}
@@ -42,6 +42,25 @@ export default function Home() {
       >
         Go to Newsletter Page →
       </Link>
+      <br></br>
+
+      {/* Link to the Resources page */}
+      <Link
+        href="/resources"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to Resources page →
+      </Link>
+      <br></br>
+
+      {/* Link to the SARP page */}
+      <Link
+        href="/sarp"
+        className="mt-4 inline-block text-blue-600 hover:underline"
+      >
+        Go to SARP page →
+      </Link>
+      <br></br>
 
     </section>
   );
