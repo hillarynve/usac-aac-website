@@ -6,17 +6,16 @@ export default function Nav() {
       <ul className="flex gap-3">
           <NavButton label="Home" href="/"/>
           <NavButton label="Commission Leadership" href="/leadership" dropdownItems={[
-            {label: 'Leadership 1', href: '/leadership/1'},
-            {label: 'Leadership 2', href: '/leadership/2'},
-            {label: 'Leadership 3', href: '/leadership/3'},
+            {label: '25-26 Leadership', href: '/leadership/25-26-leadership'},
+            {label: '25-26 Senator Guide', href: '/leadership/25-26-senator-guide'},
           ]}/>
           <NavButton label="Newsletter" href="/newsletter"/>
           <NavButton label="AAC Internship" href="/internship"/>
           <NavButton label="AAC SARP" href="/sarp"/>
           <NavButton label="Resources" href="/resources" dropdownItems={[
-            {label: 'Resource 1', href: '/resources/1'},
-            {label: 'Resource 2', href: '/resources/2'},
-            {label: 'Resource 3', href: '/resources/3'},
+            {label: 'Bruin Opp', href: '/resources/BruinOpp'},
+            {label: 'Funding', href: '/resources/Funding'},
+            {label: 'Study Space', href: '/resources/StudySpace'},
           ]}/>
       </ul>
     </nav>
