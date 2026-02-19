@@ -1,0 +1,57 @@
+[
+  {
+    "Name":"DEVELOPER MODE MOCK FILE-- Maxence Larour-Debonneuil",
+    "Role":"Assistant Commissioner",
+    "Pronouns":"He/Him",
+    "Year":"Third",
+    "Major(s)":"Chemical Engineering",
+    "Minor(s)":"Data Science Engineering",
+    "Email":"maxlarour@ucla.edu",
+    "First Term":"AY 24-25",
+    "Second Term":"25-26"
+  },
+  {
+    "Name":"Antonia Torres-Tinoco",
+    "Role":"Secretary to the Commissioner",
+    "Pronouns":"She/Her",
+    "Year":"Fourth",
+    "Major(s)":"Political Science and Sociology",
+    "Minor(s)":"Chicano/a Studies",
+    "Email":"antoniatorres04@g.ucla.edu",
+    "First Term":"AY 24-25",
+    "Second Term":"AY 25-26"
+    },
+    {
+      "Name":"Nimran Singh",
+      "Role":"[]",
+      "Pronouns":"She/Her",
+      "Year":"First",
+      "Major(s)":"Political Science  ",
+      "Minor(s)":"[]",
+      "Email":"nimransingh1013@g.ucla.edu",
+      "First Term":"AY 25-26",
+      "Second Term":"[]"
+    },
+    {
+      "Name":"Angela Ledesma-Grattarola",
+      "Role":"Chief of Senate",
+      "Pronouns":"She/Her",
+      "Year":"Third",
+      "Major(s)":"Political Science & Public Affairs",
+      "Minor(s)":"",
+      "Email":"aledesma39@g.ucla.edu",
+      "First Term":"AY 24-25",
+      "Second Term":"25-26"
+    },
+    {
+      "Name":"Arman Aksu",
+      "Role":"Assistant Chief of Senate",
+      "Pronouns":"He/Him",
+      "Year":"Third",
+      "Major(s)":"Psychology",
+      "Minor(s)":"[]",
+      "Email":"aaksu16@g.ucla.edu",
+      "First Term":"24-25",
+      "Second Term":"25-26"
+    }
+  ]
