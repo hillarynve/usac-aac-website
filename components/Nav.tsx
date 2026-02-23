@@ -15,7 +15,7 @@ export default function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/SARP">
+              <Link href="/sarp">
                 AACP SARP
               </Link>
             </li>
