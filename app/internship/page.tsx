@@ -1,15 +1,20 @@
 import Link from "next/link";
+import HeaderBanner from "./components/header_banner";
+import HorizontalScrollCards from "./components/horizontal_scroll_cards";
 
 export default function Internship() {
   return (
     <section>
-      <h1 className="text-2xl font-bold"> Internship Page</h1>
-      <p className="mt-4 text-gray-600">
-        Placeholder page for internship content.
-      </p>
+      <HeaderBanner />
 
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
+      <div className="px-12">
+        <hr className="border-gray-300 my-8" />
+        <HorizontalScrollCards />
+        <hr className="border-gray-300 my-8" />
+        <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
+          Back to Home
+        </Link>
+      </div>
     </section>
   );
 }
