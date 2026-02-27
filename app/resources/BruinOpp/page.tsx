@@ -4,39 +4,42 @@ import "./style.css"
 export default function BruinOpp() {
   return (
     <section>
-      <h1 className="bruinOppHead"> BruinOpp</h1>
 
       {/* <div className="section__media">
         <img src=""></img>
       </div> */}
 
-      <div className="section__content">
-        <h2 className="text-4xl">
-        Program Description
-        </h2>
+      <div className="frame1">
 
-        <p className="text-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        <br></br>
-        <br></br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        seddo eiusmod tempor incididunt ut labore et dolore magna aliqua
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <br></br>
-        <button className="basicButton">
-          CTA
-        </button>
+        <div className="left-box">
+          Placeholder Box
+        </div>
+
+        <div className="right-box">
+          <h2 className="text-4xl">
+            Bruin Opp Resource Database
+          </h2>
+
+          <p className="text-xl">
+            This database seeks to address the current limited availability of jobs, internships, and scholarships for undergraduate students. Our goal is to increase access to opportunities and create a more equitable experience for students. This database is especially geared toward incoming first-year freshmen and transfers and first-generation students that are underrepresented at UCLA.
+          </p>
+          <p className="text-xl">
+            The following pages will be updated periodically over the course of the school year to reflect new opportunities and deadlines. It will also be expanded to include a multitude of career paths beyond Pre-med, Pre-law, and Pre-business. Continue to visit the website to explore new additions! 
+          </p>
+          <button className="basicButton">
+            Text
+          </button>
+        </div>
+        
       
       </div>
 
-      <br></br>
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
+      <hr></hr>
+
+      <div className="submit-section">
+
+        
+      </div>
     </section>
   );
 }

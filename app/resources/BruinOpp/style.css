@@ -1,45 +1,33 @@
 
 
-.bruinOppHead{
-    text-align: left;
-    font-size: 48px;
-    font-style: medium;
-    font-weight: 500;
-}
-
-/* .head2{
-    font-size: 36px;
-    font-style: medium;
-    font-weight: 500;
-}
-
-.bodyy{
-    font-size: 20px;
-    font-style: medium;
-    font-weight: 500;
-} */
 
 .frame1{
     display: flex;
-    align-items: stretch;
+    margin: 64px;
+    height: 452px;
+    width: 1316px;
 }
 
-.frame1__media{
-    flex: 0 0 42%;
+.left-box{
+    width: 40%;
+    background-color: #B3B3B3;
+    text-align: center;
 }
 
-.section__content{
-    flex: 1;
+.right-box{
+    margin-left: 24px;
+    width: 60%; 
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     font-style: medium;
     font-weight: 500;
 }
 
 .basicButton{
-    background-color: #B7B7B7;
+    background-color: #6E6E6E;
     font-size: 24px;
     border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
+    width: 293px;
+    height: 79px;
 }
