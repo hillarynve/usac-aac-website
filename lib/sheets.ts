@@ -21,7 +21,7 @@ export async function fetchSheet(tabName: string) {
 
   // Production: fetch from Sheets2API
   const res = await fetch(`${BASE_URL}/${tabName}`, {
-    next: { revalidate: 10 } // 24 hours
+    next: { revalidate: 86400 } // 24 hours
   })
 
   if (!res.ok) {
