@@ -1,24 +1,57 @@
 import Link from "next/link";
-import LeadershipCard from "./leadership-card";
+import CardContainer from "./CardContainer";
+import LeadershipCard from "./LeadershipCard";
+import LongLeadershipCard from "./LongLeadershipCard";
 import "./styles.css";
 
 export default function Leadership() {
+  const boardMembers = [
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com" },
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com"  },
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com"  },
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com"  },
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com"  },
+    { name: "Timmy", pfp: "blank", title: "President", pronouns: "He/Him", year: "Fourth", majors: ["Political Science", "Sociology"], minors: ["Biology"], email: "timmy@gmail.com"  }
+  ];
+
+  const directors = [
+    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
+    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
+    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]}
+  ];
+
   return (
-    <section>
+    <section className="page-container">
       <h1 className="text-2xl font-bold">25-26 Leadership</h1>
-      <p className="mt-4 text-gray-600">
-        Placeholder page for 25-26 leadership content.
-      </p>
+      <h2>Meet the Exec Board</h2>
+      <CardContainer>
+        {boardMembers.map((boardMember, index) => (
+          <LeadershipCard
+            key={index}
+            img={boardMember.pfp}
+            name={boardMember.name}
+            title={boardMember.title}
+            pronouns={boardMember.pronouns}
+            year={boardMember.year}
+            majors={boardMember.majors}
+            minors={boardMember.minors}
+            email={boardMember.email}
+          />
+        ))}
+      </CardContainer>
 
-      <Link href="/leadership" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Common Leadership
-      </Link>
-
-      <LeadershipCard
-        img="blank"
-        name="Timmy"
-        title="President"
-      />
+      <h2>Meet the Directors</h2>
+      <CardContainer>
+        {directors.map((director, index) => (
+          <LongLeadershipCard
+            key={index}
+            img={director.pfp}
+            name={director.name}
+            title={director.title}
+            tasks={director.tasks}
+          />
+        ))}
+      </CardContainer>
     </section>
   );
 }
