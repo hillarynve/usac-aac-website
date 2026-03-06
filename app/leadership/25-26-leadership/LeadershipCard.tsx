@@ -4,15 +4,17 @@ import "./styles.css";
 interface LeadershipCardProps {
   img: string;
   name: string;
-  title: string;
+  role: string;
   pronouns: string;
   year: string;
-  majors: string[];
-  minors: string[];
+  majors: string;
+  minors: string;
   email: string;
+  term1: string;
+  term2: string;
 }
 
-export default function LeadershipCard({ img, name, title, pronouns, year, majors, minors, email }: LeadershipCardProps) {
+export default function LeadershipCard({ img, name, role, pronouns, year, majors, minors, email, term1, term2 }: LeadershipCardProps) {
   return (
     <div className="leadership-card">
       <div className="leadership-card-inner">
@@ -20,28 +22,18 @@ export default function LeadershipCard({ img, name, title, pronouns, year, major
           <img src={img} width="160" height="160" className="leadership-card-pfp" />
           <div className="leadership-card-label">
             <div>{name}</div>
-            <div>{title}</div>
+            <div>{role}</div>
           </div>
         </div>
         <div className="leadership-card-back">
           <div className="leadership-card-info">
             <div>Pronouns: {pronouns}</div>
             <div>Year: {year}</div>
-            <div>
-              Majors: {majors.map((major, index) => (
-                <Fragment key={index}>
-                  {index === 0 ? major : `, ${major}`}
-                </Fragment>
-              ))}
-            </div>
-            <div>
-              Minors: {minors.map((minor, index) => (
-                <Fragment key={index}>
-                  {index === 0 ? minor : `, ${minor}`}
-                </Fragment>
-              ))}
-            </div>
+            <div>Majors: {majors}</div>
+            <div>Minors: {minors}</div>
             <div>Email: {email}</div>
+            <div>First Term: {term1}</div>
+            <div>Second Term: {term2}</div>
           </div>
         </div>
       </div>

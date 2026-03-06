@@ -4,18 +4,18 @@ import "./styles.css";
 interface LongLeadershipCardProps {
   img: string;
   name: string;
-  title: string;
+  role: string;
   tasks: string[];
 }
 
-export default function LeadershipCard({ img, name, title, tasks }: LongLeadershipCardProps) {
+export default function LeadershipCard({ img, name, role, tasks }: LongLeadershipCardProps) {
   return (
     <div className="long-leadership-card">
       <div className="long-leadership-card-top">
         <img src={img} width="160" height="160" className="leadership-card-pfp" />
         <div className="leadership-card-label">
           <div>{name}</div>
-          <div>{title}</div>
+          <div>{role}</div>
         </div>
       </div>
       <div className="long-leadership-card-bottom">
