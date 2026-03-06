@@ -22,8 +22,8 @@ export default function Leadership() {
 
   return (
     <section className="page-container">
-      <h1 className="text-2xl font-bold">25-26 Leadership</h1>
-      <h2>Meet the Exec Board</h2>
+      <h1 className="text-3xl font-bold text-center">2025-2026 Leadership</h1>
+      <h2 className="card-group-header text-xl font-bold">Meet the Exec Board</h2>
       <CardContainer>
         {boardMembers.map((boardMember, index) => (
           <LeadershipCard
@@ -40,7 +40,7 @@ export default function Leadership() {
         ))}
       </CardContainer>
 
-      <h2>Meet the Directors</h2>
+      <h2 className="card-group-header text-xl font-bold">Meet the Directors</h2>
       <CardContainer>
         {directors.map((director, index) => (
           <LongLeadershipCard
