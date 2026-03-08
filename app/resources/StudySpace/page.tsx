@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ThreeBoxes from "./components/box";
+import Box from "./components/box";
 
 export default function StudySpace() {
   return (
@@ -9,11 +9,29 @@ export default function StudySpace() {
 
       <div className="flex flex-col gap-4 w-full">
 
-        <ThreeBoxes />
+        <div className="gap-11 px-2.5 py-5 w-full">
+          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
+            <Box />
+            <Box />
+            <Box />
+          </div>
+        </div>
 
-        <ThreeBoxes />
+        <div className="gap-11 px-2.5 py-5 w-full">
+          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
+            <Box />
+            <Box />
+            <Box />
+          </div>
+        </div>
 
-        <ThreeBoxes />
+        <div className="gap-11 px-2.5 py-5 w-full">
+          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
+            <Box />
+            <Box />
+            <Box />
+          </div>
+        </div>
 
       </div>
       <p className="mt-4 text-gray-600">
