@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThreeBoxes from "./components/box";
 
 export default function StudySpace() {
   return (
@@ -8,29 +9,11 @@ export default function StudySpace() {
 
       <div className="flex flex-col gap-4 w-full">
 
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-          </div>
-        </div>
+        <ThreeBoxes />
 
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-          </div>
-        </div>
+        <ThreeBoxes />
 
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-            <div className="flex-1 min-h-[357px] bg-[#B3B3B3] rounded-[10px] flex items-center justify-center">Placeholder box (image/text/card)</div>
-          </div>
-        </div>
+        <ThreeBoxes />
 
       </div>
       <p className="mt-4 text-gray-600">
