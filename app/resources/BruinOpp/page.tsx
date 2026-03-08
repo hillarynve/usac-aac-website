@@ -60,6 +60,9 @@ export default function BruinOpp() {
         <button className="bg-[#6E6E6E] rounded-[20px] p-2.5 w-[260px] mx-auto mt-4">Submit</button>
 
       </div>
+
+      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline"> Back to Home </Link>
+    
     </section>
   );
 }
