@@ -2,7 +2,7 @@ const USE_LIVE_API =
   process.env.NEXT_PUBLIC_USE_LIVE_API === "true"
 
 const BASE_URL =
-  "https://sheet2api.com/v1/sHL6TLUUR46V/usac-aac-website-backend-data"
+  process.env.NEXT_PUBLIC_SHEET2API_URL
 
 export async function fetchSheet(tabName: string) {
   // Development: use local mock data
