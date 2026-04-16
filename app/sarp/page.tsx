@@ -30,7 +30,7 @@ export default function SARP() {
           <h3 className = "heading-ambassadors">Meet Our Current Student <br /> Ambassadors</h3>
           
           {/* ambasador cards */}
-          <div className="ambassadors-grid"> 
+          <div className="card-container"> 
             {/* ambassador card 1 */}
             <div className="ambassador-card">
               <div className="ambassador-image">

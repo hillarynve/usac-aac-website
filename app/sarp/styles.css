@@ -105,7 +105,7 @@ Heading
 }
 .paragraph-text {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0;
     color: var(--white-text);
 }
@@ -127,12 +127,12 @@ Heading
 /* -------------------------------------------------
 Student Ambassadors section 
 ------------------------------------------------- */
-.ambassadors-grid {
+/* .ambassadors-grid {
     display: flex;
     gap: clamp(24px, 44px, 64px);
     margin-top: 24px;
     justify-content: center;
-}
+} */
 .student-ambassadors-section {
     padding-top: 70px;
     padding-bottom: 120px;
@@ -143,8 +143,18 @@ Student Ambassadors section
     color: var(--darkBlue-text);
     padding-top: 12px;
 }
+.card-container {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .ambassador-card {
     display: flex;
+    min-width: 380px;
+    max-width: 680;
     flex-direction: column; 
     background-color: white;
     border-radius: 8px;
@@ -203,6 +213,7 @@ Student Ambassadors section
 }
 .ambassador-p {
     text-align: left;
+    font-size: 1.2rem;
 }
 .hr {
     padding-bottom: 20px;
@@ -223,7 +234,7 @@ Info break
 .info-text {
     max-width: 50%;
     padding: 24px; 
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--white-text);
     margin: 0 auto; 
@@ -254,6 +265,7 @@ Weekly Tasks
     text-align: left;
     line-height: 1.2;
     margin-bottom: 18px;
+    font-size: 1.2rem;
 }
 .heading {
     text-align: left;
@@ -262,7 +274,7 @@ Weekly Tasks
 }
 .tasks-paragraph-text {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--white-text);
 }
 /* -------------------------------------------------
@@ -294,13 +306,13 @@ Current projects
     box-shadow: 4px 6px 6px rgba(0,0,0,0.1);
 }
 .project-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 14px;
     text-align: left;
     color: var(--darkBlue-text);
 }
 .project-description {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--black-text);
     text-align: left;
     font-size: 12 rem;
