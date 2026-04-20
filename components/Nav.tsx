@@ -1,18 +1,20 @@
 import Link from "next/link";
+import { Mulish } from 'next/font/google';
+
+const mulish = Mulish({ subsets: ['latin']});
 
 export default function Nav() {
   return (
     <nav>
-      <ul className="flex gap-3">
-          <NavButton label="Home" href="/"/>
-          <NavButton label="Commission Leadership" href="/leadership" dropdownItems={[
+      <ul className={`flex gap-3 ${mulish.className}`}>
+          <NavButton label="Leadership" href="/leadership" dropdownItems={[
             {label: '25-26 Leadership', href: '/leadership/25-26-leadership'},
             {label: '25-26 Senator Guide', href: '/leadership/25-26-senator-guide'},
             {label: 'Previous', href: '/leadership/previous'},
           ]}/>
-          <NavButton label="Newsletter" href="/newsletter"/>
-          <NavButton label="AAC Internship" href="/internship"/>
-          <NavButton label="AAC SARP" href="/sarp"/>
+          <NavButton label="Research" href="/newsletter"/>
+          <NavButton label="SARP" href="/sarp"/>
+          <NavButton label="Internship" href="/internship"/>
           <NavButton label="Resources" href="/resources" dropdownItems={[
             {label: 'Bruin Opp', href: '/resources/BruinOpp'},
             {label: 'Funding', href: '/resources/Funding'},
@@ -27,7 +29,7 @@ function NavButton({ label, href, dropdownItems }: NavButtonProps) {
   if (!dropdownItems) {
     return (
       <li>
-        <Link href={href} className="inline-flex items-center justify-center h-12 min-w-40 px-8 bg-gray-300 hover:bg-gray-400">
+        <Link href={href} className="inline-flex text-usac-blue hover:text-usac-blue-light items-center justify-center h-12 min-w-40 px-8">
           {label}
         </Link>
       </li>
@@ -36,15 +38,15 @@ function NavButton({ label, href, dropdownItems }: NavButtonProps) {
 
   return (
     <li className="relative group">
-      <Link href={href} className="inline-flex items-center justify-center h-12 min-w-32 px-8 bg-gray-300 hover:bg-gray-400">
+      <Link href={href} className="inline-flex text-usac-blue hover:text-usac-blue-light items-center justify-center h-12 min-w-32 px-8">
         {label}
       </Link>
-      <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg min-w-[200px]">
+      <div className="absolute top-full left-0 hidden text-usac-blue group-hover:block bg-white shadow-lg min-w-[200px] z-10">
         {dropdownItems.map((item) => (
           <Link 
             key={item.href}
             href={item.href} 
-            className="block px-4 py-2 hover:bg-gray-100"
+            className="block px-4 py-2 hover:bg-gray-100 hover:text-usac-blue-light"
           >
             {item.label}
           </Link>
