@@ -9,20 +9,21 @@ export default async function Leadership() {
   const boardMembers = await fetchSheet("Leadership");
 
   const directorsTemp = [
-    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
-    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
-    { name: "Timmy", pfp: "blank", title: "President", tasks: ["task1", "task2", "task2", "task4"]}
+    { name: "Timmy", pfp: "https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
+    { name: "Timmy", pfp: "https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg", title: "President", tasks: ["task1", "task2", "task2", "task4"]},
+    { name: "Timmy", pfp: "https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg", title: "President", tasks: ["task1", "task2", "task2", "task4"]}
   ];
 
   return (
     <section className="page-container">
-      <h1 className="text-3xl font-bold text-center">2025-2026 Leadership</h1>
-      <h2 className="card-group-header text-xl font-bold">Meet the Exec Board</h2>
+      <h1>Leadership</h1>
+      <h2>2023-2026</h2>
+      <h3>Meet the Exec Board</h3>
       <CardContainer>
         {boardMembers.map((boardMember: { [x: string]: string; }, index: Key | null | undefined) => (
           <LeadershipCard
             key={index}
-            img="blank"
+            img="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg"
             name={boardMember["Name"]}
             role={boardMember["Role"]}
             pronouns={boardMember["Pronouns"]}
@@ -32,11 +33,12 @@ export default async function Leadership() {
             email={boardMember["Email"]}
             term1={boardMember["First Term"]}
             term2={boardMember["Second Term"]}
+            linkedin={boardMember["Linkedin"]}
           />
         ))}
       </CardContainer>
 
-      <h2 className="card-group-header text-xl font-bold">Meet the Directors</h2>
+      <h3 className="card-group-header">Meet the Directors</h3>
       <CardContainer>
         {directorsTemp.map((director, index) => (
           <LongLeadershipCard

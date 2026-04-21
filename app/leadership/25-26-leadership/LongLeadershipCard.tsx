@@ -12,6 +12,7 @@ export default function LeadershipCard({ img, name, role, tasks }: LongLeadershi
   return (
     <div className="long-leadership-card">
       <div className="long-leadership-card-top">
+        <div className="leadership-card-gradient-overlay"/>
         <img src={img} width="160" height="160" className="leadership-card-pfp" />
         <div className="leadership-card-label">
           <div>{name}</div>
@@ -19,7 +20,7 @@ export default function LeadershipCard({ img, name, role, tasks }: LongLeadershi
         </div>
       </div>
       <div className="long-leadership-card-bottom">
-        <div>Weekly Task:</div>
+        <h1>Weekly Task:</h1>
         <ul>
           {tasks.map((task, index) => (
             <li key={index}>
