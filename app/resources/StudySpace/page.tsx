@@ -1,45 +1,38 @@
 import Link from "next/link";
 import Box from "./components/box";
+import "./style.css";
+import StudyHedrick from "./img/StudyHedrick.png";
+import Bplate from "./img/Bplate.jpg";
+import StarbucksWestwood from "./img/StarbucksWestwood.jpg";
+import YRL from "./img/YRL.jpg";
+import Kerckhoff from "./img/Kerckhoff.png";
+import BTC from "./img/BTC.jpg";
+import NorthernLights from "./img/NorthernLights.png";
+import Anderson from "./img/Anderson.jpg";
+import Upsidedown from "./img/upsidedown.jpg";
 
 export default function StudySpace() {
   return (
     <section>
-      <h1 className="text-[40px] font-medium text-center w-4/5 mx-auto m-8"> Where Can I Study?</h1>
+      <div>
+        <h1 className="study-header"> Where Can I Study?</h1>
 
-
-      <div className="flex flex-col gap-4 w-full">
-
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <Box />
-            <Box />
-            <Box />
-          </div>
+        <div className="study-grid">
+          <Box label="The Study at Hedrick" src={StudyHedrick} />
+          <Box label="Bruin Plate" src={Bplate} />
+          <Box label="Starbucks Westwood" src={StarbucksWestwood} />
+          <Box label="Research Library" src={YRL} />
+          <Box label="Kerckhoff Hall" src={Kerckhoff} />
+          <Box label="Bruin Transfer Center" src={BTC} />
+          <Box label="Northern Lights Cafe" src={NorthernLights} />
+          <Box label="Anderson School of Management" src={Anderson} />
+          <Box label="Upside Down Cafe" src={Upsidedown} />
         </div>
 
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <Box />
-            <Box />
-            <Box />
-          </div>
-        </div>
-
-        <div className="gap-11 px-2.5 py-5 w-full">
-          <div className="flex flex-row gap-6 max-w-[1091px] mx-auto">
-            <Box />
-            <Box />
-            <Box />
-          </div>
-        </div>
-
+        <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
+          Back to Home
+        </Link>
       </div>
-      <p className="mt-4 text-gray-600">
-        Placeholder page for Study Space content.
-      </p>
-
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
     </section>
   );
 }
