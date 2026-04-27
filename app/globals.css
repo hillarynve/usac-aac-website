@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Imperial+Aramaic&display=swap');
 @import "tailwindcss";
 @layer base, components, utilities;
 
@@ -11,6 +13,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-usac-blue: #084C7F;
+  --color-usac-blue-light: #3A81B8;
 }
 /* 
 @media (prefers-color-scheme: dark) {

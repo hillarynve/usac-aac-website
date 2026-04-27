@@ -1,0 +1,128 @@
+.page-container {
+    padding: 50px min(150px, 10%);
+}
+
+.card-group-header {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Style leadership card */
+.leadership-card {
+    width: 100%;
+    height: 270px;
+    background-color: transparent;
+    perspective: 1000px;
+    box-sizing: border-box;
+}
+
+/* Needed to position the front and back of the card */
+.leadership-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+}
+
+/* Position the front and back side */
+.leadership-card-front, .leadership-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Style front of the card */
+.leadership-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bbb;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.leadership-card-pfp {
+    border: 1px solid black;
+}
+
+.leadership-card-label div:first-child {
+    font-size: 20px;
+}
+
+.leadership-card-label div:nth-child(2) {
+    font-size: 14px;
+}
+
+/* Style back of the card */
+.leadership-card-back {
+    background-color: #aaa;
+    transform: rotateY(180deg);
+}
+
+.leadership-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    font-size: 14px;
+    height: 100%;
+}
+
+/* Flip on hover */
+.leadership-card:hover .leadership-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Style long leadership card */
+.long-leadership-card {
+    width: 100%;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.long-leadership-card-top {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bbb;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+
+.long-leadership-card-bottom {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.long-leadership-card-bottom ul {
+    margin: 0;
+    padding: 10px 25px;
+    color: #6E808D;
+    list-style-type: disc;
+}
