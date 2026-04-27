@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(to bottom, #ffffff 0%, #83A5BF 77%, #084C7F 94%);
+  min-height: 100vh;
+}
+
+.study-header {
+    font-size: 64px;
+    font-style: medium;
+    color: #084C7F;
+    text-align: center;
+    width: 80%;        
+    margin: 2rem auto;
+}
+
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 50px;
+  max-width: 1091px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/* Mobile - 2 column */
+@media (max-width: 768px) {
+  .study-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
