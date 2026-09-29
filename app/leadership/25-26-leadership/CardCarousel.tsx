@@ -5,7 +5,13 @@ interface CardCarousel {
   children?: ReactNode;
 }
 
+/* 
+ * This is the container for the director cards
+ * There must be a minimum number of cards for the carousel feature to activate
+ */
 export default function CardCarousel({ children }: CardCarousel) {
+  const MINIMUM_CARDS = 4;
+
   const CARD_WIDTH = 300;
   const GAP = 10;
   const PX_PER_SECOND = 80;
