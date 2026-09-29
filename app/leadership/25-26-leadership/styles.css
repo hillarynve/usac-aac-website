@@ -34,6 +34,42 @@
     justify-content: center;
 }
 
+.card-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card-carousel-group {
+    display: flex;
+    gap: 10px;
+}
+
+.card-carousel-group > * {
+    flex: 0 0 300px;
+}
+
+.animate-carousel {
+    overflow: hidden;
+}
+
+.animate-carousel-group {
+    padding-right: 10px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
 /* Style leadership card */
 .leadership-card {
     width: 100%;
@@ -147,9 +183,17 @@
 .leadership-card-info a {
     position: relative;
     margin-top: 5px;
-    width: 25px;
     z-index: inherit;
     cursor: pointer;
+    text-align: center;
+}
+
+.leadership-card-info a > * {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    color: #fff;
 }
 
 /* Flip on hover */

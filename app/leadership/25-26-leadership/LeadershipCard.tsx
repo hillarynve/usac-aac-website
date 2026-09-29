@@ -1,3 +1,4 @@
+import { FaLinkedin } from "react-icons/fa";
 import "./styles.css";
 
 interface LeadershipCardProps {
@@ -23,25 +24,25 @@ export default function LeadershipCard({ img, name, role, pronouns, year, majors
           <img src={img} className="leadership-card-pfp" />
           <div className="leadership-card-label">
             <div>{name}</div>
-            <div>{role}</div>
+            { role && <div>{role}</div> }
           </div>
         </div>
         <div className="leadership-card-back">
           <div className="leadership-card-solid-overlay"/>
           <img src={img} className="leadership-card-pfp" />
           <div className="leadership-card-info">
-            <p>{pronouns}</p>
-            <p>Year: {year}</p>
-            <p>Major(s): {majors}</p>
-            <p>Minor(s): {minors}</p>
-            <p>Email: {email}</p>
-            <p>First Term: {term1}</p>
-            <p>Second Term: {term2}</p>
-            <a href={linkedin} target="_blank"><img src={`https://cdn-icons-png.flaticon.com/512/1384/1384014.png`}/></a>
+            { pronouns && <p>{pronouns}</p> }
+            { year && <p>Year: {year}</p> }
+            { majors && <p>Major(s): {majors}</p> }
+            { minors && <p>Minor(s): {minors}</p> }
+            { email && <p>Email: {email}</p> }
+            { term1 && <p>First Term: {term1}</p> }
+            { term2 && <p>Second Term: {term2}</p> }
+            <a href={linkedin} target="_blank"><FaLinkedin /></a>
           </div>
           <div className="leadership-card-label">
             <div>{name}</div>
-            <div>{role}</div>
+            { role && <div>{role}</div> }
           </div>
         </div>
       </div>
