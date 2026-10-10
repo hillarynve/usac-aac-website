@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { FaLinkedin } from "react-icons/fa";
 import "./styles.css";
 
 interface LeadershipCardProps {
@@ -12,28 +12,37 @@ interface LeadershipCardProps {
   email: string;
   term1: string;
   term2: string;
+  linkedin: string;
 }
 
-export default function LeadershipCard({ img, name, role, pronouns, year, majors, minors, email, term1, term2 }: LeadershipCardProps) {
+export default function LeadershipCard({ img, name, role, pronouns, year, majors, minors, email, term1, term2, linkedin }: LeadershipCardProps) {
   return (
     <div className="leadership-card">
       <div className="leadership-card-inner">
         <div className="leadership-card-front">
-          <img src={img} width="160" height="160" className="leadership-card-pfp" />
+          <div className="leadership-card-gradient-overlay"/>
+          <img src={img} className="leadership-card-pfp" />
           <div className="leadership-card-label">
             <div>{name}</div>
-            <div>{role}</div>
+            { role && <div>{role}</div> }
           </div>
         </div>
         <div className="leadership-card-back">
+          <div className="leadership-card-solid-overlay"/>
+          <img src={img} className="leadership-card-pfp" />
           <div className="leadership-card-info">
-            <div>Pronouns: {pronouns}</div>
-            <div>Year: {year}</div>
-            <div>Majors: {majors}</div>
-            <div>Minors: {minors}</div>
-            <div>Email: {email}</div>
-            <div>First Term: {term1}</div>
-            <div>Second Term: {term2}</div>
+            { pronouns && <p>{pronouns}</p> }
+            { year && <p>Year: {year}</p> }
+            { majors && <p>Major(s): {majors}</p> }
+            { minors && <p>Minor(s): {minors}</p> }
+            { email && <p>Email: {email}</p> }
+            { term1 && <p>First Term: {term1}</p> }
+            { term2 && <p>Second Term: {term2}</p> }
+            <a href={linkedin} target="_blank"><FaLinkedin /></a>
+          </div>
+          <div className="leadership-card-label">
+            <div>{name}</div>
+            { role && <div>{role}</div> }
           </div>
         </div>
       </div>

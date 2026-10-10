@@ -1,25 +1,81 @@
 .page-container {
-    padding: 50px min(150px, 10%);
+    margin: 0;
+    padding: 30px min(150px, 10%);
+    background: linear-gradient(to top, #084C7F, #FFF);
 }
 
-.card-group-header {
-    margin-top: 100px;
+.page-container h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    color: #084C7F;
+}
+
+.page-container h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    color: #084C7F;
+}
+
+.page-container h3 {
+    margin-top: 80px;
     margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #084C7F;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     justify-content: center;
+}
+
+.card-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card-carousel-group {
+    display: flex;
+    gap: 10px;
+}
+
+.card-carousel-group > * {
+    flex: 0 0 300px;
+}
+
+.animate-carousel {
+    overflow: hidden;
+}
+
+.animate-carousel-group {
+    padding-right: 10px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
 
 /* Style leadership card */
 .leadership-card {
     width: 100%;
-    height: 270px;
+    height: 300px;
     background-color: transparent;
-    perspective: 1000px;
+    perspective: 1500px;
     box-sizing: border-box;
 }
 
@@ -28,7 +84,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 0.6s ease;
     transform-style: preserve-3d;
     box-sizing: border-box;
 }
@@ -40,30 +96,55 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Style front of the card */
 .leadership-card-front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #bbb;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    background-color: #BBB;
 }
 
 .leadership-card-pfp {
-    border: 1px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.leadership-card-gradient-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #084C7F 1%, transparent 30%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.leadership-card-solid-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 76, 127, 0.8);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.leadership-card-label {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    color: #FFF;
 }
 
 .leadership-card-label div:first-child {
     font-size: 20px;
+    font-weight: 600;
 }
 
 .leadership-card-label div:nth-child(2) {
@@ -72,8 +153,12 @@
 
 /* Style back of the card */
 .leadership-card-back {
-    background-color: #aaa;
+    background-color: #AAA;
     transform: rotateY(180deg);
+}
+
+.leadership-card-back .leadership-card-label {
+    color: #3f739a;
 }
 
 .leadership-card-info {
@@ -84,7 +169,31 @@
     gap: 5px;
     text-align: center;
     font-size: 14px;
-    height: 100%;
+    z-index: 4;
+    padding-top: 20%;
+}
+
+.leadership-card-info p {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 1;
+    z-index: inherit;
+}
+
+.leadership-card-info a {
+    position: relative;
+    margin-top: 5px;
+    z-index: inherit;
+    cursor: pointer;
+    text-align: center;
+}
+
+.leadership-card-info a > * {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    color: #fff;
 }
 
 /* Flip on hover */
@@ -95,34 +204,38 @@
 /* Style long leadership card */
 .long-leadership-card {
     width: 100%;
-    border: 2px solid #bbb;
     border-radius: 10px;
     overflow: hidden;
+    background-color: #FFF;
 }
 
 .long-leadership-card-top {
+    position: relative;
     width: 100%;
     height: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #bbb;
+    background-color: #BBB;
     text-align: center;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
-    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .long-leadership-card-bottom {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.long-leadership-card-bottom h1 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #084C7F;
 }
 
 .long-leadership-card-bottom ul {
     margin: 0;
     padding: 10px 25px;
-    color: #6E808D;
+    color: #000;
     list-style-type: disc;
 }

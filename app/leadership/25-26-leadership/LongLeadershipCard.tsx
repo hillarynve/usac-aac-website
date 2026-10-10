@@ -1,17 +1,19 @@
-import { Fragment } from 'react';
+import { Key } from 'react';
 import "./styles.css";
 
 interface LongLeadershipCardProps {
   img: string;
   name: string;
   role: string;
-  tasks: string[];
+  tasks: string;
 }
 
 export default function LeadershipCard({ img, name, role, tasks }: LongLeadershipCardProps) {
+  const tasksList = JSON.parse(tasks);
   return (
     <div className="long-leadership-card">
       <div className="long-leadership-card-top">
+        <div className="leadership-card-gradient-overlay"/>
         <img src={img} width="160" height="160" className="leadership-card-pfp" />
         <div className="leadership-card-label">
           <div>{name}</div>
@@ -19,9 +21,9 @@ export default function LeadershipCard({ img, name, role, tasks }: LongLeadershi
         </div>
       </div>
       <div className="long-leadership-card-bottom">
-        <div>Weekly Task:</div>
+        <h1>Weekly Task:</h1>
         <ul>
-          {tasks.map((task, index) => (
+          {tasksList.map((task: string, index: Key | null | undefined) => (
             <li key={index}>
               {task}
             </li>
