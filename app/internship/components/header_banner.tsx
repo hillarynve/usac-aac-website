@@ -1,33 +1,35 @@
+import { libreBaskerville } from "../fonts";
+
 export default function HeaderBanner() {
-  const dueDate = " Jan 30, 2026";
-  const duration = "Winter, 10-weeks";
+  const dueDate = "Jan 30, 2026";
+  const duration = "Winter, 10 weeks";
+  const applyUrl = "#";
 
   return (
-    <div className="w-full bg-gray-100 px-8 py-16 md:px-16 flex flex-col gap-8 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 pointer-events-none"
-        style={{ backgroundImage: "" }} />
-        <h1 className="text-7xl font-black text-black">
+    <div className="grain internship-hero w-full overflow-hidden px-8 py-20 md:px-16 md:py-28">
+      <div className="flex max-w-2xl flex-col gap-4">
+        <h1 className={`${libreBaskerville.className} text-5xl text-gray-100 md:text-7xl`}>
           AAC Internship
         </h1>
 
-        <div className="flex gap-5">
-            <button
-              className="px-6 py-2 bg-gray-400 text-sm">
-              Due {dueDate}
-            </button>
-            <button
-              className="px-6 py-2 bg-gray-400 text-sm">
-              {duration}
-            </button>
-            <button
-              className="px-3 py-2 text-white bg-black text-xs rounded-full">
-              Apply Now
-            </button>
-        </div>
-
-        <p className="text-sm leading-relaxed max-w-sm tracking-wide">
+        <p className="max-w-xl text-base leading-snug text-gray-100">
           One sentence summary or mission. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+
+        <div className="mt-8 flex flex-wrap items-center gap-6">
+          <span className="bg-gray-200 px-6 py-3 text-sm text-usac-navy">
+            Due {dueDate}
+          </span>
+          <span className="bg-gray-200 px-6 py-3 text-sm text-usac-navy">
+            {duration}
+          </span>
+          <a
+            href={applyUrl}
+            className="rounded-full bg-usac-gold px-16 py-4 text-lg text-usac-navy transition hover:brightness-110">
+            Apply now
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
