@@ -13,7 +13,7 @@ export default function HeaderBanner() {
         </h1>
 
         <p className="max-w-xl text-base leading-snug text-gray-100">
-          One sentence summary or mission. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          The AAC Internship is an effort that was started with a single goal in mind: to cultivate a space that could lead into a sources of empowerment for future leaders that would bring us closer to Educational Justice.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-6">

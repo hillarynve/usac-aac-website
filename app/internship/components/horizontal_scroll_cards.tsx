@@ -26,18 +26,25 @@ export default function HorizontalScrollCards() {
 }
 
 function getCards(): Card[] {
-  const content = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
-  ];
   const cards: Card[] = [
-    { title: "Spring 2026", content: content, img_url: "" },
-    { title: "Winter 2026", content: content, img_url: "" },
-    { title: "Fall 2025", content: content, img_url: "" },
-    { title: "Spring 2025", content: content, img_url: "" },
-    { title: "Winter 2025", content: content, img_url: "" },
+    {
+      title: "Fall 2022",
+      content: [
+        "This quarter, we started off with over 10 interns.",
+        "Our interns partook in conversations and skill-building opportunities. They began by building a fundamental knowledge about USAC, the Academic Senate, AAC and the Mother Organizations.",
+        "Mixed in, interns developed their professional skills and advocacy toolkit to incite change in any environment.",
+        "Upon completion, our interns this quarter have been placed in the following committees for the remainder of this term: Access & Equity, Accountability & Transparency, and Sanctuary Campus.",
+      ],
+      img_url: "",
+    },
+    {
+      title: "Winter 2023",
+      content: [
+        "This quarter, we are entering in a never done-before collaboration with the Education Department at UCLA.",
+        "For students in the major, who've completed EDUC 180 and are looking for capstone credit, you can apply to our internship and enroll in the course -- thus completing your capstone requirement, gaining internship experience, and receiving credit for the work you do within AAC this quarter.",
+      ],
+      img_url: "",
+    },
   ];
 
   return cards;

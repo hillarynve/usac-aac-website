@@ -14,20 +14,15 @@ export default function Internship() {
       <div className="grain internship-body overflow-hidden px-8 py-20 md:px-16 md:py-28">
         <div className="flex flex-col gap-20">
           <ImageTextSection
-            title="Intern Responsibilities"
-            content={[
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-              "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-              "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            ]}
+            title="What You'll Learn"
+            content="Through an intensive and enriching 10-week program, a cohort of interns in the Fall and Winter quarters learn about the ins-and-outs of the Undergraduate Student Association (UCLA's student government model), the Academic Affairs Commission, the Academic Senate, the Mother Organizations and many valuable campus stakeholders."
             imageUrl=""
             imgLeft={true}
           />
 
           <ImageTextSection
-            title="History of the Program"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            title="Where Interns Go Next"
+            content="By the end of it, interns will walk away with the knowledge, tools and experience to advocate for Educational Justice. All of our interns go on to work with our committees through the Spring Quarter. Beyond, our interns tend to continue on with directorship positions in AAC, other USAC offices, running for USAC positions, or applying their skills many fields like law, policy, and more."
             imageUrl=""
             imgLeft={false}
           />
