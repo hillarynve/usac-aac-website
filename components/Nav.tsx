@@ -12,7 +12,7 @@ export default function Nav() {
             {label: '25-26 Senator Guide', href: '/leadership/25-26-senator-guide'},
             {label: 'Previous', href: '/leadership/previous'},
           ]}/>
-          <NavButton label="Research" href="/newsletter"/>
+          <NavButton label="Research" href="/research"/>
           <NavButton label="SARP" href="/sarp"/>
           <NavButton label="Internship" href="/internship"/>
           <NavButton label="Resources" href="/resources" dropdownItems={[
