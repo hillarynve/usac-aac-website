@@ -158,7 +158,7 @@ export default function NewsletterClient({
       <section className="pl-8 pr-8 pt-10 pb-22 md:pl-24">
         <h1
           className={`mb-1 ${libreBaskerville.className}`}
-          style={{ color: "#084C7F", fontSize: "90px", fontWeight: 400 }}
+          style={{ color: "#084C7F", fontSize: "60px", fontWeight: 400 }}
         >
           Newsletter
         </h1>
@@ -166,7 +166,7 @@ export default function NewsletterClient({
           className="font-medium"
           style={{
             color: "#084C7F",
-            fontSize: "30px",
+            fontSize: "25px",
             fontFamily: "Inter, sans-serif",
           }}
         >
@@ -195,7 +195,7 @@ export default function NewsletterClient({
             style={{
               color: "#084C7F",
               fontFamily: "Inter, sans-serif",
-              fontSize: "25px",
+              fontSize: "18px",
               fontStyle: "italic",
             }}
           />
@@ -279,7 +279,7 @@ function NewsletterCard({
             style={{
               color: "#084C7F",
               fontFamily: "Mulish, sans-serif",
-              fontSize: "55px",
+              fontSize: "25px",
               fontWeight: 700,
             }}
           >
@@ -301,7 +301,7 @@ function NewsletterCard({
           className="leading-snug line-clamp-3"
           style={{
             fontFamily: "Mulish, sans-serif",
-            fontSize: "30px",
+            fontSize: "20px",
             fontWeight: 400,
             color: '#111'
           }}
