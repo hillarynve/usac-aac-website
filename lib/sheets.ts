@@ -10,7 +10,7 @@ export async function fetchSheet(tabName: string) {
     try {
       const data = await import(`./mock/${tabName}.json`)
       return data.default
-    } catch (error) {
+    } catch {
       throw new Error(
         `Mock data for "${tabName}" not found in /lib/mock/`
       )

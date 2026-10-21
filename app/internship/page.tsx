@@ -7,8 +7,7 @@ import "./styles.css";
 
 export default function Internship() {
   return (
-    // -m-6 cancels the padding on <main> so the banners span the full width
-    <section className={`${mulish.className} -m-6`}>
+    <section className={mulish.className}>
       <HeaderBanner />
 
       <div className="grain internship-body overflow-hidden px-8 py-20 md:px-16 md:py-28">

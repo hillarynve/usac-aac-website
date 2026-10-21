@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Directorship24() {
   return (
-    <section>
+    <section className="p-6">
       <h1 className="text-2xl font-bold">24-25 Directorship</h1>
       <p className="mt-4 text-gray-600">
         Placeholder page for 24-25 Directorship content.

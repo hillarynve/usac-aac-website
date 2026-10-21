@@ -16,7 +16,7 @@ export default function CardCarousel({ children }: CardCarousel) {
   const GAP = 10;
   const PX_PER_SECOND = 80;
   const numCards = Children.count(children);
-  const sufficientCards = numCards > 4;
+  const sufficientCards = numCards > MINIMUM_CARDS;
   const totalWidth = numCards * (CARD_WIDTH + GAP);
   const animationTime = totalWidth / PX_PER_SECOND;
   return (

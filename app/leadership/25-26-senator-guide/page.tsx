@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Leadership() {
   return (
-    <section>
+    <section className="p-6">
       <h1 className="text-2xl font-bold">25-26 Senator Guide</h1>
       <p className="mt-4 text-gray-600">
         Placeholder page for 25-26 senator guide content.
