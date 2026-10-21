@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Previous() {
   return (
-    <section>
+    <section className="p-6">
       <h1 className="text-2xl font-bold">Previous Commission Leadership</h1>
       <p className="mt-4 text-gray-600">
         Placeholder page for previous leadership content.
