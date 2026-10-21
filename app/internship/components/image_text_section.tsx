@@ -1,40 +1,42 @@
-import Image from "next/image";
+import ImageBox from "./image_box";
+import { libreBaskerville } from "../fonts";
 
 type Props = {
   title: string;
-  content: string;
+  // A string renders as a paragraph, an array renders as a bulleted list
+  content: string | string[];
   imageUrl: string;
   imgLeft?: boolean;
 };
 
 export default function ImageTextSection({ title, content, imageUrl, imgLeft = true }: Props) {
   const image = (
-    <div className="relative w-2/5 flex-shrink-0 bg-gray-300 self-stretch">
-      {imageUrl && (
-        <Image
-          src={imageUrl}
-          alt={title}
-          fill
-          className="object-cover"
-        />
-      )}
-    </div>
+    <ImageBox
+      src={imageUrl}
+      alt="Image of last internship cohort"
+      className="aspect-[3/2] w-full shrink-0 rounded-xl md:w-[38%]"
+    />
   );
 
   const text = (
-    <div className="w-3/5 flex flex-col gap-4">
-      <h2 className="text-4xl font-medium text-black">{title}</h2>
-      <p className="text-lg text-gray-600 leading-relaxed">{content}</p>
+    <div className="flex flex-col gap-6">
+      <h2 className={`${libreBaskerville.className} text-4xl text-usac-navy md:text-6xl`}>{title}</h2>
+      {Array.isArray(content) ? (
+        <ul className="list-disc space-y-1 pl-6 text-base leading-snug text-usac-navy">
+          {content.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-base leading-snug text-usac-navy">{content}</p>
+      )}
     </div>
   );
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-16 md:px-20 flex items-stretch gap-12">
-      {imgLeft ? (
-        <>{image}{text}</>
-      ) : (
-        <>{text}{image}</>
-      )}
+    <div className={`flex flex-col items-start gap-10 md:gap-16 ${imgLeft ? "md:flex-row" : "md:flex-row-reverse"}`}>
+      {image}
+      {text}
     </div>
   );
 }
