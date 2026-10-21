@@ -1,4 +1,3 @@
-import Link from "next/link";
 import HeaderBanner from "./components/header_banner";
 import HorizontalScrollCards from "./components/horizontal_scroll_cards";
 import BottomBanner from "./components/bottom_banner";

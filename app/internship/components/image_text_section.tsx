@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Props = {
   title: string;
   content: string;
@@ -7,12 +9,13 @@ type Props = {
 
 export default function ImageTextSection({ title, content, imageUrl, imgLeft = true }: Props) {
   const image = (
-    <div className="w-2/5 flex-shrink-0 bg-gray-300 self-stretch">
+    <div className="relative w-2/5 flex-shrink-0 bg-gray-300 self-stretch">
       {imageUrl && (
-        <img
+        <Image
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       )}
     </div>

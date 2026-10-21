@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Image from "next/image";
 import { Mulish, Libre_Baskerville } from "next/font/google";
 const libreBaskerville = Libre_Baskerville({ subsets: ["latin"], weight: ["400"] });
 import { useState } from "react";
@@ -68,7 +68,7 @@ const CARDS = [
 
 export default function Newsletter() {
   const [search, setSearch] = useState("");
-  const [yearFilter, setYearFilter] = useState("");
+  const [yearFilter] = useState("");
 
   const filtered = CARDS.filter((c) => {
     const matchesSearch =
@@ -167,10 +167,11 @@ function NewsletterCard({ year, title, excerpt, imgUrl, gradient }: CardProps) {
         style={{ background: gradient }}
       >
         {imgUrl && (
-          <img
+          <Image
             src={imgUrl}
             alt={title}
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         )}
       </div>

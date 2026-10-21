@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Card = {
   title: string;
   content: string;
@@ -8,7 +10,7 @@ export default function HorizontalScrollCards() {
   const cards = getCards();
   return (
     <div className="p-6">
-      <h2 className="text-4xl font-medium mb-4">What We've Done</h2>
+      <h2 className="text-4xl font-medium mb-4">What We&apos;ve Done</h2>
 
       <div className="flex gap-4 overflow-x-auto pb-4">
         {cards.map((card, i) => (
@@ -39,9 +41,9 @@ function CardItem({ card }: { card: Card }) {
         <p className="font-normal text-2xl leading-snug">{card.title}</p>
         <p className="text-sm text-gray-500 whitespace-pre-line leading-relaxed">{card.content}</p>
       </div>
-      <div className="flex-[1] bg-gray-300">
+      <div className="relative flex-[1] bg-gray-300">
         {card.img_url && (
-          <img src={card.img_url} alt={card.title} className="w-full h-full object-cover" />
+          <Image src={card.img_url} alt={card.title} fill className="object-cover" />
         )}
       </div>
     </div>

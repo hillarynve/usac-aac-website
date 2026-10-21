@@ -14,7 +14,9 @@ export default function LeadershipCard({ img, name, role, tasks }: LongLeadershi
     <div className="long-leadership-card">
       <div className="long-leadership-card-top">
         <div className="leadership-card-gradient-overlay"/>
-        <img src={img} width="160" height="160" className="leadership-card-pfp" />
+        {/* Photos come from the Google Sheet and can be hosted anywhere, so next/image can't be used */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={img} alt={name} width="160" height="160" className="leadership-card-pfp" />
         <div className="leadership-card-label">
           <div>{name}</div>
           <div>{role}</div>
