@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Maxence Larour-Debonneuil",
+    "role": "Assistant Commissioner",
+    "pronouns": "He/Him",
+    "year": "Third",
+    "majors": "Chemical Engineering",
+    "minors": "Data Science Engineering",
+    "email": "maxlarour@ucla.edu",
+    "first_term": "AY 24-25",
+    "second_term": "AY 25-26",
+    "linkedin": "https://www.google.com/"
+  },
+  {
+    "name": "Antonia Torres-Tinoco",
+    "role": "Secretary to the Commissioner",
+    "pronouns": "She/Her",
+    "year": "Fourth",
+    "majors": "Political Science and Sociology",
+    "minors": "Chicano/a Studies",
+    "email": "antoniatorres04@g.ucla.edu",
+    "first_term": "AY 24-25",
+    "second_term": "AY 25-26"
+  },
+  {
+    "name": "Angela Ledesma-Grattarola",
+    "role": "Chief of Senate",
+    "pronouns": "She/Her",
+    "year": "Third",
+    "majors": "Political Science & Public Affairs",
+    "minors": "",
+    "email": "aledesma39@g.ucla.edu",
+    "first_term": "AY 24-25",
+    "second_term": "AY 25-26"
+  }
+]
