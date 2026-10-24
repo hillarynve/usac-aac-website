@@ -29,7 +29,7 @@ export default function MobileNav() {
       {open && (
         <nav
           id="mobile-nav"
-          className={`absolute inset-x-0 top-full z-20 bg-white shadow-lg px-6 pb-6 ${mulish.className}`}
+          className={`absolute inset-x-0 top-full z-20 max-h-[calc(100vh-6rem)] overflow-y-auto bg-white shadow-lg px-6 pb-6 ${mulish.className}`}
         >
           <ul className="flex flex-col">
             {NAV_LINKS.map((link) => (
