@@ -21,7 +21,9 @@ export default function LeadershipCard({ img, name, role, pronouns, year, majors
       <div className="leadership-card-inner">
         <div className="leadership-card-front">
           <div className="leadership-card-gradient-overlay"/>
-          <img src={img} className="leadership-card-pfp" />
+          {/* Photos come from the Google Sheet and can be hosted anywhere, so next/image can't be used */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={img} alt={name} className="leadership-card-pfp" />
           <div className="leadership-card-label">
             <div>{name}</div>
             { role && <div>{role}</div> }
@@ -29,7 +31,8 @@ export default function LeadershipCard({ img, name, role, pronouns, year, majors
         </div>
         <div className="leadership-card-back">
           <div className="leadership-card-solid-overlay"/>
-          <img src={img} className="leadership-card-pfp" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={img} alt="" className="leadership-card-pfp" />
           <div className="leadership-card-info">
             { pronouns && <p>{pronouns}</p> }
             { year && <p>Year: {year}</p> }

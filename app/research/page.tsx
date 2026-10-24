@@ -111,10 +111,6 @@ export default function Research() {
           </a>
         </div>
       </div>
-
-      <footer className="py-24 opacity-30 text-center text-[10px] tracking-[0.3em] uppercase">
-        © 2026 UCLA Academic Affairs Commission
-      </footer>
     </section>
   );
 }

@@ -7,7 +7,7 @@ export default async function Leadership() {
   console.log("Leadership data:", data)
 
   return (
-    <section>
+    <section className="p-6">
       <h1 className="text-2xl font-bold">Common Leadership</h1>
       <p className="mt-4 text-gray-600">
         Placeholder page for leadership content.
@@ -37,8 +37,6 @@ export default async function Leadership() {
       </Link>
 
       <br></br>
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
 
       <h2 className="mt-8 font-semibold">API Test Output:</h2>
       <pre className="mt-2 text-sm bg-gray-100 p-4 overflow-x-auto">

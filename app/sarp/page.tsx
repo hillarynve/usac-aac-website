@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import "./styles.css";
 
 
@@ -7,7 +7,7 @@ export default function SARP() {
     
     <section className="web-page">
       <div className = "header-section"> 
-        <img src="/image.jpg" alt="" className="header-bg-image" />
+        <Image src="/image.jpg" alt="" fill className="header-bg-image" />
         <div className="header-blur" />
         <div className="header-gradient" />
         <div className = "heading-padding"> 
@@ -127,8 +127,6 @@ export default function SARP() {
         </div>
       </div>
 
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
     </section>
   );
 }

@@ -9,7 +9,7 @@ export default function Home() {
   };
 
   return (
-    <main 
+    <div 
       className="min-h-screen text-white font-sans selection:bg-blue-100 selection:text-[#084C7F]" 
       style={backgroundStyle}
     >
@@ -122,10 +122,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="py-24 opacity-30 text-center text-[10px] tracking-[0.3em] uppercase">
-        © 2026 UCLA Academic Affairs Commission
-      </footer>
-    </main>
+    </div>
   );
 }

@@ -108,8 +108,7 @@ const BEFORE_APPLYING_TEXT =
 // =============================================================================
 export default function FundingPage() {
   return (
-    // -m-6 counteracts the layout's <main className="p-6"> padding so sections span full-width
-    <div className={`-m-6 flex flex-col min-h-screen ${mulish.className}`}>
+    <div className={`flex flex-col min-h-screen ${mulish.className}`}>
       
       {/* -------------------------------------------------------------------- */}
       {/* 1. HERO SECTION                                                      */}

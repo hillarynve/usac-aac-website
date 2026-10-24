@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import bruinOppImg from "../img/bruinopp.png";
 
@@ -55,7 +54,7 @@ export default function BruinOpp() {
 
           <button className="bg-[#FDB71B] text-2xl text-[#084C7F] rounded-[80px] p-2.5 w-[293px] h-[79px] mx-auto mt-4">Submit</button>
 
-        </div><Link href="/" className="mt-4 inline-block text-blue-600 hover:underline"> Back to Home </Link>
+        </div>
       </div>
     
     </section>

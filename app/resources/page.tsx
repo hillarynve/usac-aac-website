@@ -27,8 +27,6 @@ export default function Resources() {
         Funding </Link><br></br>
       <Link href="/resources/StudySpace" className="mt-4 inline-block text-blue-600 hover:underline">
         Study Space </Link><br></br>
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
     </section>
   );
 }
