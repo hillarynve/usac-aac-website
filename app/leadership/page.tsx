@@ -37,8 +37,6 @@ export default async function Leadership() {
       </Link>
 
       <br></br>
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
 
       <h2 className="mt-8 font-semibold">API Test Output:</h2>
       <pre className="mt-2 text-sm bg-gray-100 p-4 overflow-x-auto">

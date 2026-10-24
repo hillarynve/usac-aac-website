@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import "./styles.css";
 
 
@@ -128,8 +127,6 @@ export default function SARP() {
         </div>
       </div>
 
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
     </section>
   );
 }

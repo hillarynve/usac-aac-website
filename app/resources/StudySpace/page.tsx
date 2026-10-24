@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Libre_Baskerville, Mulish } from "next/font/google";
 import "./style.css";
@@ -138,7 +137,7 @@ export default function StudySpace() {
   }, [activeCard]);
 
   return (
-    <section>
+    <section className="study-page">
       <div>
         {/* Page Title: Serif Libre Baskerville font in USAC navy */}
         <h1 className={`study-header ${libreBaskerville.className}`}>
@@ -208,12 +207,6 @@ export default function StudySpace() {
           })}
         </div>
 
-        <Link
-          href="/"
-          className="mt-4 inline-block text-blue-600 hover:underline"
-        >
-          Back to Home
-        </Link>
       </div>
     </section>
   );

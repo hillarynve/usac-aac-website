@@ -13,8 +13,6 @@ export default function Leadership23() {
 
       <br></br> 
 
-      <Link href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-        Back to Home </Link>
     </section>
 
         

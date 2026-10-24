@@ -1,17 +1,22 @@
 import { LuInstagram, LuLinkedin } from "react-icons/lu";
+import { SOCIAL_LINKS } from "@/lib/site";
 
-export default function SocialNav() {
+// `className` overrides the link color so the same icons work on light (header)
+// and dark (footer) backgrounds.
+export default function SocialNav({ className = "text-usac-blue hover:text-usac-blue-light" }: { className?: string }) {
   return (
     <div className="flex gap-3">
-    <SocialButton 
-      label="in" 
-      icon={<LuLinkedin className="w-6 h-6"/>}
-      href="https://www.linkedin.com/company/ucla-community-service-commission/"
-    />
-      <SocialButton 
-        label="IG" 
+      <SocialButton
+        label="LinkedIn"
+        icon={<LuLinkedin className="w-6 h-6"/>}
+        href={SOCIAL_LINKS.linkedin}
+        className={className}
+      />
+      <SocialButton
+        label="Instagram"
         icon={<LuInstagram className="w-6 h-6"/>}
-        href="https://www.instagram.com/usacaac/"
+        href={SOCIAL_LINKS.instagram}
+        className={className}
       />
     </div>
   );
@@ -19,19 +24,21 @@ export default function SocialNav() {
 
 interface SocialButtonProps {
   label: string;
-  icon?: React.ReactNode;
+  icon: React.ReactNode;
   href: string;
+  className: string;
 }
 
-function SocialButton({ label, icon, href }: SocialButtonProps) {
+function SocialButton({ label, icon, href, className }: SocialButtonProps) {
   return (
-    <a 
+    <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center justify-center h-12 w-12 text-usac-blue hover:text-usac-blue-light"
+      aria-label={label}
+      className={`inline-flex items-center justify-center h-12 w-12 ${className}`}
     >
-      {icon ? icon : label}
+      {icon}
     </a>
   );
 }
